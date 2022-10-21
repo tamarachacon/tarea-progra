@@ -1,0 +1,14 @@
+struct Nodo{
+   int dato;
+   struct Nodo *izquierda;
+   struct Nodo *derecha;
+};
+
+struct Nodo *nuevoodo(int dato){
+    size_t tamañoNodo= sizeof(struct Nodo);
+    struct Nodo *nodo= (struct Nodo *) malloc(tamañoNodo);
+    nodo->dato = dato
+    nodo->izquierda = nodo->derecha = NULL;
+    return nodo;
+    }
+    
